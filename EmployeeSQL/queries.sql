@@ -20,3 +20,8 @@ RIGHT JOIN employees ON
 employees.emp_no = dept_emp.emp_no
 LEFT JOIN departments ON
 departments.dept_no = dept_emp.dept_no;
+
+SELECT employees.first_name, employees.last_name, employees.sex
+FROM employees
+WHERE employees.first_name = 'Hercules' AND employees.last_name LIKE 'B%';
+
