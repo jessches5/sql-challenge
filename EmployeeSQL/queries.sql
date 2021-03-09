@@ -33,3 +33,11 @@ LEFT JOIN departments ON
 departments.dept_no = dept_emp.dept_no
 WHERE departments.dept_name = 'Sales';
 
+SELECT dept_emp.emp_no, employees.last_name, employees.first_name, departments.dept_name
+FROM dept_emp
+RIGHT JOIN employees ON
+employees.emp_no = dept_emp.emp_no
+LEFT JOIN departments ON
+departments.dept_no = dept_emp.dept_no
+WHERE departments.dept_name = 'Sales' OR departments.dept_name = 'Development';
+
