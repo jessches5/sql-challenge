@@ -38,3 +38,10 @@ CREATE TABLE dept_emp (
   dept_no VARCHAR NOT NULL,
   FOREIGN KEY (dept_no) REFERENCES departments(dept_no)
 );
+
+SELECT * FROM titles;
+SELECT * FROM employees;
+SELECT * FROM salaries;
+SELECT * FROM departments;
+SELECT * FROM dept_manager;
+SELECT * FROM dept_emp;
